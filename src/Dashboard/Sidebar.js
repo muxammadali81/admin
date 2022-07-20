@@ -27,8 +27,8 @@ function Sidebar() {
     {
       id: 2,
       img: <Statistic />,
-      btn: "Statistics",
-      to: "/statistik",
+      btn: "Orders",
+      to: "/df",
     },
     {
       id: 3,
@@ -51,13 +51,13 @@ function Sidebar() {
     {
       id: 6,
       img: <Customer />,
-      btn: "Customer",
+      btn: "Add product",
       to: "/hy",
     },
     {
       id: 7,
       img: <Message />,
-      btn: "Messages",
+      btn: "Brends",
       to: "/yj",
     },
     {
