@@ -1,0 +1,8 @@
+.count{
+    font-family: sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    color: rgba(8, 80, 80, 0.829);
+    display: flex;
+    justify-content: center;
+}
