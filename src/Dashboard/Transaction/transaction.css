@@ -1,0 +1,38 @@
+.transСard {
+    background: #fff;
+    padding: 21px;
+}
+.tableHeader,
+.tableBody {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ADB5BD;
+}
+.tableHeader th {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #adb5bd;
+    text-align: start;
+    font-weight: 400;
+    
+}
+.tableBody td{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500 !important;
+    color: #141432;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(108,117,125,.25) !important;
+}
+.imgText img{
+    width: 40px;
+}

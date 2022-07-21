@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./dashboard.css";
 import logo from "./img/logo.png";
 import dukaan from "./img/dukaan.png";
 import { NavLink } from "react-router-dom";
+import {FaUserAlt} from "react-icons/fa"
 import {
   Arrowbottom,
   Customer,
@@ -40,13 +41,13 @@ function Sidebar() {
       id: 4,
       img: <Trans />,
       btn: "Transactions",
-      to: "/df",
+      to: "/Transaction",
     },
     {
       id: 5,
       img: <Product />,
       btn: "Products",
-      to: "/gh",
+      to: "/products",
     },
     {
       id: 6,
@@ -62,8 +63,8 @@ function Sidebar() {
     },
     {
       id: 8,
-      img: <Setting />,
-      btn: "Settings",
+      img: <FaUserAlt className="user" />,
+      btn: "Account",
       to: "/mk",
     },
     {
@@ -73,7 +74,6 @@ function Sidebar() {
       to: "/li",
     },
   ];
-  const [active, setActive] = useState(null);
   return (
     <div className="container">
       <div className="sidebar">
@@ -88,7 +88,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="sidebar-btns">
-            {sidebar.map((item, i) => (
+            {sidebar.map((item) => (
               <NavLink className="sidebar-btn" to={item.to}>
                 <div className="sidebar-icon">{item.img}</div>
                 <button>{item.btn}</button>

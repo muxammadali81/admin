@@ -18,6 +18,10 @@ a{
     margin: 0 auto;
 }
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 190px;
     padding: 20px;
     background: #ffffff;
 }
@@ -58,9 +62,6 @@ a{
     padding: 13px;
     margin-left: -12px;
 }
-.sidebar-btns .sidebar-btn:nth-child(8) {
-    margin-top: 352px;
-}
 .sidebar-btn.active {
     width: 110%;
     background: #475be8;
@@ -78,6 +79,9 @@ a{
 }
 .sidebar-btn.active .sidebar-icon rect {
     fill: #fff;
+}
+.user{
+    color: #808191;
 }
 .sidebar-icon {
     width: 16px;
@@ -98,15 +102,13 @@ a{
 /* .diagram */
 .section {
     background: #f5f5f5;
-    padding: 50px 130px 19px 58px;
+    padding: 50px 58px 19px 58px;
 }
 .diagram-text h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 131.9%;
-    /* identical to box height, or 29px */
-
     color: #292929;
 }
 .diagram-cards {
