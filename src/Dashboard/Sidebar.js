@@ -1,9 +1,8 @@
 import React from "react";
 import "./dashboard.css";
-import logo from "./img/logo.png";
-import dukaan from "./img/dukaan.png";
+import logo from "./img/logo.svg";
 import { NavLink } from "react-router-dom";
-import {FaUserAlt} from "react-icons/fa"
+import { FaUserAlt } from "react-icons/fa";
 import {
   Arrowbottom,
   Customer,
@@ -12,7 +11,6 @@ import {
   Message,
   Payment,
   Product,
-  Setting,
   Statistic,
   Trans,
 } from "./assets/Svg";
@@ -29,13 +27,13 @@ function Sidebar() {
       id: 2,
       img: <Statistic />,
       btn: "Orders",
-      to: "/df",
+      to: "/ds",
     },
     {
       id: 3,
       img: <Payment />,
       btn: "Payment",
-      to: "/sa",
+      to: "/df",
     },
     {
       id: 4,
@@ -53,25 +51,25 @@ function Sidebar() {
       id: 6,
       img: <Customer />,
       btn: "Add product",
-      to: "/hy",
+      to: "/fg",
     },
     {
       id: 7,
       img: <Message />,
       btn: "Brends",
-      to: "/yj",
+      to: "/ty",
     },
     {
       id: 8,
       img: <FaUserAlt className="user" />,
       btn: "Account",
-      to: "/mk",
+      to: "/hj",
     },
     {
       id: 9,
       img: <Logaut />,
       btn: "Logout",
-      to: "/li",
+      to: "/kl",
     },
   ];
   return (
@@ -79,10 +77,7 @@ function Sidebar() {
       <div className="sidebar">
         <div className="sidebar-item">
           <div className="logo">
-            <div className="logo-dukaan">
-              <img src={logo} alt="" />
-              <img src={dukaan} alt="" />
-            </div>
+            <img src={logo} alt="" />
             <div className="logo-icon">
               <Arrowbottom />
             </div>

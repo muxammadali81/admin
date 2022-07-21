@@ -93,6 +93,10 @@
     border: 1px solid rgba(222, 226, 230, 0.7);
     border-radius: 4px;
     padding: 20px;
+    transition: 0.3s;
+}
+.productCard:hover{
+    box-shadow: 0 0 43px rgb(51 168 126 / 15%);
 }
 .wrapImg {
     display: flex;
@@ -100,11 +104,16 @@
 }
 .wrapImg img {
     width: 180px;
+    user-select: none;
 }
 .productCard h3 {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
     font-weight: 500;
     font-size: 20px;
     color: #6c757d;
+    overflow: hidden;
 }
 .productCard span {
     font-size: 18px;

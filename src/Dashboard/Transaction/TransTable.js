@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import visa from "../img/visa.png";
 
 function TransTable() {
@@ -27,7 +28,7 @@ function TransTable() {
                 <th>Date</th>
                 <th>Action</th>
               </div>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12].map((item) => (
                 <div className="tableBody">
                   <td>
                     <b>#456667</b>
@@ -53,6 +54,31 @@ function TransTable() {
               <button className="btn">3</button>
               <button className="btn">Next</button>
             </div>
+          </div>
+          <div className="transBox">
+            <h5>Transaction Details</h5>
+            <hr />
+            <h5>Suplier:</h5>
+            <p>TemplateMount</p>
+            <h5>Date:</h5>
+            <p>December 19th, 2020</p>
+            <h5>Billing address</h5>
+            <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+            <h5>VAT ID:</h5>
+            <p>54741654160</p>
+            <h5>Email:</h5>
+            <p>support@example.com</p>
+            <h5>Item purchased:</h5>
+            <p>
+              <a href="#"> Adidas Air Jordan </a>
+              <FaExternalLinkAlt className="link" /> <br />
+              <a href="#"> Great product </a>
+              <FaExternalLinkAlt className="link" />
+            </p>
+            <p>Payment: PayPal</p>
+            <h4>$457.14</h4>
+            <hr />
+            <button className="btn btn-light"> Download receipe </button>
           </div>
         </div>
       </div>

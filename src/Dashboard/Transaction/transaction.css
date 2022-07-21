@@ -1,14 +1,28 @@
 .transСard {
+    display: grid;
+    grid-template-columns: 75% 23%;
+    gap: 20px;
     background: #fff;
     padding: 21px;
+    margin-top: 30px;
 }
 .tableHeader,
 .tableBody {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 24% 14% 26% 26% 10%;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid #ADB5BD;
+    border-bottom: 1px solid #adb5bd;
+}
+.tableBody:hover{
+    background: #f2f4ff;
+}
+.tableBody button{
+    padding: 5px 10px;
+}
+.tableBody button:focus{
+    background: #f30000;
+    color: #fff;
 }
 .tableHeader th {
     font-size: 16px;
@@ -16,9 +30,8 @@
     color: #adb5bd;
     text-align: start;
     font-weight: 400;
-    
 }
-.tableBody td{
+.tableBody td {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500 !important;
@@ -27,12 +40,59 @@
     align-items: center;
     gap: 10px;
 }
-.imgText{
+.imgText {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(108,117,125,.25) !important;
+    border: 1px solid rgba(108, 117, 125, 0.25) !important;
 }
-.imgText img{
+.imgText img {
     width: 40px;
+}
+.transBox {
+    height: 100vh;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(108, 117, 125, 0.2);
+    background: #f8f9fa;
+}
+.transBox h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #141432;
+}
+.transBox h5:nth-child(1) {
+    margin-bottom: 16px;
+}
+.transBox h5:nth-child(3) {
+    margin-top: 16px;
+}
+.transBox p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #141432;
+    margin-bottom: 16px;
+}
+.transBox p a {
+    color: #3167eb;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.transBox p .link{
+    color: #3167eb;
+    margin-left: 5px;
+}
+.transBox h4{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #141432;
+}
+.transBox button{
+    margin-top: 16px;
 }
