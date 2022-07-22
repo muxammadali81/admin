@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../Sidebar";
+import { Link } from "react-router-dom";
 import "./orders.css";
 
 function Ordersone() {
@@ -133,6 +134,14 @@ function Ordersone() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="pagination">
+          <button className="btn btn-pagination">Previous</button>
+          <button className="btn">1</button>
+          <Link to={"/orderstwo"}>
+            <button className="btn">2</button>
+            <button className="btn">Next</button>
+          </Link>
         </div>
       </div>
     </div>

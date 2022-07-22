@@ -6,7 +6,6 @@ function Orders() {
   return (
     <div>
         <Ordersone/>
-        <Orderstwo/>
     </div>
   )
 }

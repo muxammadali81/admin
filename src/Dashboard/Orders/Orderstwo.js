@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../Sidebar";
+import { Link } from "react-router-dom";
 import "./orders.css";
 
 import Iphone from "../img/iphone.png";
@@ -175,6 +176,14 @@ function Orderstwo() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="pagination">
+          <Link to="/order">
+            <button className="btn btn-pagination">Previous</button>
+            <button className="btn">1</button>
+          </Link>
+          <button className="btn">2</button>
+          <button className="btn">Next</button>
         </div>
       </div>
     </div>

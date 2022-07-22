@@ -27,7 +27,7 @@ function Sidebar() {
       id: 2,
       img: <Statistic />,
       btn: "Orders",
-      to: "/ds",
+      to: "/order",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ function Sidebar() {
       id: 6,
       img: <Customer />,
       btn: "Add product",
-      to: "/fg",
+      to: "/adproduct",
     },
     {
       id: 7,
@@ -63,7 +63,7 @@ function Sidebar() {
       id: 8,
       img: <FaUserAlt className="user" />,
       btn: "Account",
-      to: "/hj",
+      to: "/login",
     },
     {
       id: 9,

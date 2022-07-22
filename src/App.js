@@ -5,6 +5,8 @@ import Dashboard from "./Dashboard/Dashboard";
 import Products from "./Dashboard/Products/Products";
 import Transaction from "./Dashboard/Transaction/Transaction";
 import LogIn from './Dashboard/logIn/LogIn';
+import Orders from "./Dashboard/Orders/Orders"
+import Orderstwo from "./Dashboard/Orders/Orderstwo";
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
           <Route  path="/" element={<Dashboard />} />
           <Route  path="/products" element={<Products />} />
           <Route  path="/transaction" element={<Transaction />} />
-          <Route  path='/hy' element={<AddProduct />} />
-          <Route  path='/mk' element={<LogIn />} />
+          <Route  path='/adproduct' element={<AddProduct />} />
+          <Route  path='/login' element={<LogIn />} />
+          <Route  path='/order' element={<Orders />} />
+          <Route path="/orderstwo" element={<Orderstwo />} />
         </Routes>
       </BrowserRouter>
     </div>
