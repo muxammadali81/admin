@@ -57,7 +57,7 @@ function Sidebar() {
       id: 7,
       img: <Message />,
       btn: "Brends",
-      to: "/ty",
+      to: "/brends",
     },
     {
       id: 8,

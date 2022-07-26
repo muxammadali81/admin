@@ -58,6 +58,7 @@
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     border-radius: 0.25rem;
+    cursor: pointer;
 }
 
 .addProductCard_nav > p:hover {

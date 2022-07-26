@@ -46,7 +46,7 @@ const AddProduct = () => {
                     <div className="addProduct_header">
                         <h2>Create product</h2>
                         <div>
-                            <a className='btn btn-outline-danger' href="/hy">&times; Discard</a>
+                            <button className='btn btn-outline-danger' >&times; Discard</button>
                         </div>
                     </div>
                     <div className="addProductCard">
@@ -123,8 +123,8 @@ const AddProduct = () => {
                         </div>
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     )
 }
 

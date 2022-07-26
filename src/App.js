@@ -7,6 +7,7 @@ import Transaction from "./Dashboard/Transaction/Transaction";
 import LogIn from './Dashboard/logIn/LogIn';
 import Orders from "./Dashboard/Orders/Orders"
 import Orderstwo from "./Dashboard/Orders/Orderstwo";
+import Brend from "./Dashboard/brend/Brend";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route  path='/adproduct' element={<AddProduct />} />
           <Route  path='/login' element={<LogIn />} />
           <Route  path='/order' element={<Orders />} />
-          <Route path="/orderstwo" element={<Orderstwo />} />
+          <Route  path="/orderstwo" element={<Orderstwo />} />
+          <Route  path="/brends" element={<Brend />} />
         </Routes>
       </BrowserRouter>
     </div>
